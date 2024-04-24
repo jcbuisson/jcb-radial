@@ -1,5 +1,5 @@
 
-# jcb-gauge
+# jcb-radial
 
 A custom-element which displays radial progress
 
