@@ -5,9 +5,9 @@ A custom-element which displays radial progress
 
 ## Properties
 
-| Property                         | Attribute | Modifiers | Type                           | Defaul        | Description                                      |
+| Property                         | Attribute | Modifiers | Type                           | Default       | Description                                      |
 |----------------------------------|-----------|-----------|--------------------------------|---------------|--------------------------------------------------|
-| `value`                          | `value`   |           | `number`                       | 0             |                                                  |
+| `value`                          | `value`   |           | `number`                       | 0             | Value between 0 and 100                          |
 
 
 ## CSS Custom Properties
