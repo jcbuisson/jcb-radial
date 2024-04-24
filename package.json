@@ -1,0 +1,22 @@
+{
+  "name": "jcb-radial",
+  "version": "1.0.1",
+  "type": "module",
+  "main": "dist/jcb-radial.js",
+  "exports": {
+    ".": "./dist/jcb-radial.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^2.6.1"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0"
+  }
+}
