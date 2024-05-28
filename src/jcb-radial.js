@@ -17,15 +17,15 @@ export class Radial extends LitElement {
    }
 
    render() {
-      const value = Math.max(0, Math.min(this.value, 99))
-      const angle = 2*Math.PI*value / 100.
+      const value = Math.round(Math.max(0, Math.min(this.value, 100)))
+      const angle = 2*Math.PI*Math.min(value, 99.99) / 100.
       const plus180 = angle < Math.PI ? 0 : 1
       const xEnd = 50 + 50.*Math.sin(angle)
       const yEnd = 50 - 50.*Math.cos(angle)
       return html`
          <svg viewBox="-5 -5 110 109" xmlns="http://www.w3.org/2000/svg">
             <text text-anchor="middle" dy="0.3em" class="text" fill="black" x="50" y="50">
-               ${this.value}%
+               ${value}%
             </text>
 
             <path d="M 50 0 A 50 50 0 1 1 49 0" style="stroke: #C4E1F1; fill:none;stroke-width:8;" stroke-linecap="round"/>
