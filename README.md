@@ -32,6 +32,7 @@ Result in `dist/jcb-radial.js`
 
 # Publish on NPM
 ```
+npm run build
 npm publish
 ```
 
