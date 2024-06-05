@@ -17,9 +17,8 @@ export class Radial extends LitElement {
    }
 
    render() {
-      console.log('this.value', this.value)
       if (this.value < 0) {
-         // undefined
+         // display '--' when value is negative
          return html`
             <svg viewBox="-5 -5 110 109" xmlns="http://www.w3.org/2000/svg">
                <text text-anchor="middle" dy="0.3em" class="text" fill="black" x="50" y="50">
